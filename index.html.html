@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Automobile website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="header" id="header">
+            <nav>
+              <img src="car.png"  class="logo">
+              <ul>
+                  <li><a href="#" id="BENZ">BENZ</a></li>
+                  <li><a href="#" id="MUSTANG GT">MUSTANG GT</a></li>
+                  <li><a href="#" id="BMW">BMW</a></li>
+                  <li><a href="#" id="ROLLS ROYCE">ROLLS ROYCE</a></li>
+                  
+                  </ul>
+                  <a href="#" class="btn">Reserve now</a>
+            </nav>
+          
+            <div class="info">
+                <div>
+                    <h2 id="sec">7sec</h2>
+                    <p>100mph</p>
+                </div>
+                <div>
+                    <h2 id="Speed">250mph</h2>
+                    <p>Top Speed</p>
+                </div>
+                <div>
+                    <h2 id="miles">4Miles</h2>
+                    <p>Per Litre</p>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <h2 id="model">BENZ</h2>
+                </div> 
+            </div>
+        </div>
+        
+        
+        <script>
+             var header = document.getElementById("header");
+             var bz = document.getElementById("BENZ");
+             var mgt = document.getElementById("MUSTANG GT");
+             var bw = document.getElementById("BMW");
+             var rol = document.getElementById("ROLLS ROYCE");
+             var model = document.getElementById("model");
+            
+            
+             bz.onclick = function(){
+                 header.style.backgroundImage ="url(bz.jpg)";
+                 model.innerHTML = "BENZ";
+                 sec.innerHTML = "7sec";
+                 Speed.innerHTML = "260mph";
+                 miles.innerHTML = "4Miles";
+                
+             }
+             mgt.onclick = function(){
+                 header.style.backgroundImage ="url(mus.jpg)";
+                 model.innerHTML = "MUSTANG GT";
+                 sec.innerHTML = "6sec";
+                 Speed.innerHTML = "320mph";
+                 miles.innerHTML = "5Miles";
+             }
+             bw.onclick = function(){
+                 header.style.backgroundImage ="url(bmw.jpg)";
+                 model.innerHTML = "BMW";
+                 sec.innerHTML = "8sec";
+                 Speed.innerHTML = "280mph";
+                 miles.innerHTML = "6Miles";
+             }
+
+             rol.onclick = function(){
+                 header.style.backgroundImage ="url(rolls.jpg)";
+                 model.innerHTML = "ROLLS ROYCE";
+                 sec.innerHTML = "3sec";
+                 Speed.innerHTML = "380mph";
+                 miles.innerHTML = "2Miles";
+             }
+          
+        </script>
+    </body>
+</html>
